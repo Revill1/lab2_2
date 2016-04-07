@@ -29,4 +29,14 @@ public class TestClass {
 	 			
 	 			Assert.assertEquals(true, money.add(other).add(other3).add(other2).equals(new Money(39)));
 	 		}
+	
+	@Test
+	public void subtractMoneyTest() 
+	 		{
+	 			Money money = new Money(59);
+	 			Money other = new Money(14);
+	 			
+	 			
+	 			Assert.assertEquals(true, money.subtract(other).equals(new Money(45)));
+	 		}
 }
